@@ -419,7 +419,6 @@ papers(
   "working",
   "Working papers",
   d.workingPapers,
-  "Click a paper for details."
 );
 
 papers(
