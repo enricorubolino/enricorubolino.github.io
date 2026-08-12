@@ -208,7 +208,7 @@ window.SITE_CONTENT = {
     {
       "title": "J-PAL European Social Inclusion Initiative",
       "year": "2025",
-      "description": "Evaluating incentives for firms to hire abused women (with Sonia Bhalotra, Antonio Delfino, Matteo Sandi, and Andreas Stegmann); EUR 49,510."
+      "description": "Evaluating incentives for firms to hire abused women (with Sonia Bhalotra, Alexia Delfino, Matteo Sandi, and Andreas Stegmann); EUR 49,510."
     },
     {"title": "VisitINPS Fellowship", "year": "2020; 2021; 2022; 2023", "description": ""},
     {"title": "Robert Schalkenbach Foundation Research Grant", "year": "2020", "description": ""},
