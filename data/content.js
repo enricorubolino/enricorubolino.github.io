@@ -19,11 +19,11 @@ window.SITE_CONTENT = {
 "researchAreas": [
   {
     "title": "Public economics",
-    "description": "Taxation, inequality, tax evasion, fiscal decentralization, redistribution, intergenerational mobility."
+    "description": "Taxation, inequality, redistribution, intergenerational mobility."
   },
   {
     "title": "Labor economics",
-    "description": "Labor supply, wealth shocks, hiring subsidies, household bargaining, gender inequality, regulation."
+    "description": "Labor supply, hiring subsidies, household bargaining, gender inequality."
   },
   {
     "title": "Social economics",
@@ -178,7 +178,7 @@ window.SITE_CONTENT = {
       "coauthors": "Giorgia Conte, Enrico Rubolino & Giuseppe Sorrenti"
     },
     {
-      "title": "Pathways Out of Violence",
+      "title": "Pathways Out of Gender-Based Violence",
       "coauthors": "Sonia Bhalotra, Patrizia Ordine, Giuseppe Rose & Enrico Rubolino"
     },
     {
