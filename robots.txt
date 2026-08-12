@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enricorubolino.github.io/sitemap.xml
