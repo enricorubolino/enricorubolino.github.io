@@ -1,27 +1,223 @@
 /* The page is generated from data/content.js. */
+
 const d = window.SITE_CONTENT;
-const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n};
-const link=(text,href,external=false)=>{const a=el("a",null,text);a.href=href;if(external){a.target="_blank";a.rel="noreferrer"}return a};
-const root=document.getElementById("app"); root.id="top";
-const header=el("header");header.append(link(d.profile.name,"#top"));header.firstChild.className="name";const nav=el("nav");[["Working papers","#working"],["Published and forthcoming articles","#published"],["Research in progress","#wip"],["Research funding","#funding"],["Awards","#awards"],["Teaching","#teaching"],["CV",d.profile.cv],["Contact details","#contact"]].forEach(([t,h])=>nav.append(link(t,h,h.startsWith("http"))));header.append(nav);root.append(header);
-const intro=el("section","intro"),introText=el("div");introText.append(el("h1",null,d.profile.name));const aff=el("p","affiliation");d.profile.affiliations.forEach((x,i)=>{if(i)aff.append(document.createElement("br"));aff.append(document.createTextNode(x))});introText.append(aff);const rs=el("div","research-summary");  if(d.researchIntro){   rs.append(el("p","research-intro",d.researchIntro)); }d.researchAreas.forEach(x=>{const box=el("div");box.append(el("h2",null,x.title),el("p",null,x.description));rs.append(box)});introText.append(rs);const il=el("div","intro-links");il.append(link("CV ↗",d.profile.cv,true),link("Google Scholar ↗",d.profile.scholar,true),link("Email ↗","mailto:"+d.profile.email));introText.append(il);const portrait=el("div","portrait"),photo=el("img");photo.src=d.profile.photo;photo.alt=d.profile.name;portrait.append(photo);intro.append(introText,portrait);root.append(intro);
-function bibEscape(value){return String(value||"").replace(/\\/g,"\\\\").replace(/([{}#%&_])/g,"\\$1")}
-function bibAuthors(byline){return String(byline||"").replace(/\s+et al\.?$/i," and others").replace(/\s*&\s*/g," and ").replace(/,\s+(?=[A-ZÀ-ÖØ-Þ])/g," and ")}
-function bibKey(p){const surname=(p.byline.match(/Rubolino/i)?"Rubolino":p.byline.split(/[,&]/)[0].trim().split(/\s+/).pop()||"Paper");const year=(p.year||((p.status.match(/\b(?:19|20)\d{2}\b/g)||[]).pop())||"");const word=(p.title.match(/[A-Za-zÀ-ÖØ-öø-ÿ]{4,}/)||["Paper"])[0];return (surname+year+word).normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^A-Za-z0-9]/g,"")}
-function bibText(p){const published=/journal|accepted|economic journal|economic policy/i.test(p.status);const type=published?"article":"unpublished";const fields=[`  title = {${bibEscape(p.title)}}`,`  author = {${bibEscape(bibAuthors(p.byline))}}`];const year=p.year||((p.status.match(/\b(?:19|20)\d{2}\b/g)||[]).pop());if(year)fields.push(`  year = {${year}}`);if(published)fields.push(`  journal = {${bibEscape(p.status)}}`);else fields.push(`  note = {${bibEscape(p.status)}}`);if(p.paper)fields.push(`  url = {${bibEscape(p.paper)}}`);return `@${type}{${bibKey(p)},\n${fields.join(",\n")}\n}\n`}
-function bibLink(p){const a=el("a",null,"BibTeX ↓");a.href=URL.createObjectURL(new Blob([bibText(p)],{type:"application/x-bibtex;charset=utf-8"}));a.download=bibKey(p)+".bib";a.title="Download BibTeX citation";return a}
-function paperItem(p) {
+
+const el = (tag, cls, text) => {
+  const n = document.createElement(tag);
+
+  if (cls) {
+    n.className = cls;
+  }
+
+  if (text !== undefined) {
+    n.textContent = text;
+  }
+
+  return n;
+};
+
+const link = (text, href, external = false) => {
+  const a = el("a", null, text);
+  a.href = href;
+
+  if (external) {
+    a.target = "_blank";
+    a.rel = "noreferrer";
+  }
+
+  return a;
+};
+
+const root = document.getElementById("app");
+root.id = "top";
+
+/* Header and navigation */
+
+const header = el("header");
+header.append(link(d.profile.name, "#top"));
+header.firstChild.className = "name";
+
+const nav = el("nav");
+
+[
+  ["Working papers", "#working"],
+  ["Published and forthcoming articles", "#published"],
+  ["Research in progress", "#wip"],
+  ["Research funding", "#funding"],
+  ["Awards", "#awards"],
+  ["Teaching", "#teaching"],
+  ["CV", d.profile.cv],
+  ["Contact details", "#contact"]
+].forEach(([text, href]) => {
+  nav.append(link(text, href, href.startsWith("http")));
+});
+
+header.append(nav);
+root.append(header);
+
+/* Introduction */
+
+const intro = el("section", "intro");
+const introText = el("div");
+
+introText.append(el("h1", null, d.profile.name));
+
+const affiliations = el("p", "affiliation");
+
+d.profile.affiliations.forEach((item, index) => {
+  if (index) {
+    affiliations.append(document.createElement("br"));
+  }
+
+  affiliations.append(document.createTextNode(item));
+});
+
+introText.append(affiliations);
+
+const researchSummary = el("div", "research-summary");
+
+if (d.researchIntro) {
+  researchSummary.append(
+    el("p", "research-intro", d.researchIntro)
+  );
+}
+
+d.researchAreas.forEach((area) => {
+  const box = el("div");
+
+  box.append(
+    el("h2", null, area.title),
+    el("p", null, area.description)
+  );
+
+  researchSummary.append(box);
+});
+
+introText.append(researchSummary);
+
+const introLinks = el("div", "intro-links");
+
+introLinks.append(
+  link("CV ↗", d.profile.cv, true),
+  link("Google Scholar ↗", d.profile.scholar, true),
+  link("Email ↗", `mailto:${d.profile.email}`)
+);
+
+introText.append(introLinks);
+
+const portrait = el("div", "portrait");
+const photo = el("img");
+
+photo.src = d.profile.photo;
+photo.alt = d.profile.name;
+
+portrait.append(photo);
+intro.append(introText, portrait);
+root.append(intro);
+
+/* BibTeX */
+
+function bibEscape(value) {
+  return String(value || "")
+    .replace(/\\/g, "\\\\")
+    .replace(/([{}#%&_])/g, "\\$1");
+}
+
+function bibAuthors(byline) {
+  return String(byline || "")
+    .replace(/\s+et al\.?$/i, " and others")
+    .replace(/\s*&\s*/g, " and ")
+    .replace(/,\s+(?=[A-ZÀ-ÖØ-Þ])/g, " and ");
+}
+
+function bibKey(paper) {
+  const surname = paper.byline.match(/Rubolino/i)
+    ? "Rubolino"
+    : paper.byline
+        .split(/[,&]/)[0]
+        .trim()
+        .split(/\s+/)
+        .pop() || "Paper";
+
+  const years = paper.status.match(/\b(?:19|20)\d{2}\b/g) || [];
+  const year = paper.year || years.pop() || "";
+
+  const titleWords =
+    paper.title.match(/[A-Za-zÀ-ÖØ-öø-ÿ]{4,}/) || ["Paper"];
+
+  const firstWord = titleWords[0];
+
+  return `${surname}${year}${firstWord}`
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^A-Za-z0-9]/g, "");
+}
+
+function bibText(paper) {
+  const published =
+    /journal|accepted|economic journal|economic policy/i.test(
+      paper.status
+    );
+
+  const type = published ? "article" : "unpublished";
+
+  const fields = [
+    `  title = {${bibEscape(paper.title)}}`,
+    `  author = {${bibEscape(bibAuthors(paper.byline))}}`
+  ];
+
+  const years = paper.status.match(/\b(?:19|20)\d{2}\b/g) || [];
+  const year = paper.year || years.pop();
+
+  if (year) {
+    fields.push(`  year = {${year}}`);
+  }
+
+  if (published) {
+    fields.push(`  journal = {${bibEscape(paper.status)}}`);
+  } else {
+    fields.push(`  note = {${bibEscape(paper.status)}}`);
+  }
+
+  if (paper.paper) {
+    fields.push(`  url = {${bibEscape(paper.paper)}}`);
+  }
+
+  return `@${type}{${bibKey(paper)},
+${fields.join(",\n")}
+}
+`;
+}
+
+function bibLink(paper) {
+  const a = el("a", null, "BibTeX ↓");
+
+  const file = new Blob([bibText(paper)], {
+    type: "application/x-bibtex;charset=utf-8"
+  });
+
+  a.href = URL.createObjectURL(file);
+  a.download = `${bibKey(paper)}.bib`;
+  a.title = "Download BibTeX citation";
+
+  return a;
+}
+
+/* Papers — no figure preview */
+
+function paperItem(paper) {
   const details = el("details", "paper");
   const summary = el("summary");
   const head = el("div");
 
   head.append(
-    el("h3", null, p.title),
-    el("p", null, p.byline),
-    el("p", "status", p.status)
+    el("h3", null, paper.title),
+    el("p", null, paper.byline),
+    el("p", "status", paper.status)
   );
 
   const toggle = el("span");
+
   toggle.append(
     el("b", null, "View"),
     el("i", null, "Close")
@@ -32,16 +228,20 @@ function paperItem(p) {
   const body = el("div", "paper-details");
   const copy = el("div");
 
-  copy.append(el("p", null, p.description));
+  copy.append(el("p", null, paper.description));
 
   const actions = el("div", "actions");
-  actions.append(
-    link("Paper ↗", p.paper, true),
-    bibLink(p)
-  );
 
-  (p.links || []).forEach(([text, url]) => {
-    actions.append(link(text + " ↗", url, true));
+  if (paper.paper) {
+    actions.append(link("Paper ↗", paper.paper, true));
+  }
+
+  actions.append(bibLink(paper));
+
+  (paper.links || []).forEach(([text, url]) => {
+    if (text && url) {
+      actions.append(link(`${text} ↗`, url, true));
+    }
   });
 
   copy.append(actions);
@@ -50,12 +250,166 @@ function paperItem(p) {
   details.append(summary, body);
 
   return details;
-}const details=el("details","paper"),summary=el("summary"),head=el("div");head.append(el("h3",null,p.title),el("p",null,p.byline),el("p","status",p.status));const toggle=el("span");toggle.append(el("b",null,"View"),el("i",null,"Close"));summary.append(head,toggle);const body=el("div","paper-details"),copy=el("div");copy.append(el("p",null,p.description));const actions=el("div","actions");actions.append(link("Paper ↗",p.paper,true),bibLink(p));(p.links||[]).forEach(([t,h])=>actions.append(link(t+" ↗",h,true)));copy.append(actions);const fig=el("figure"),img=el("img");img.src=p.image;img.alt="Selected figure from "+p.title;fig.append(img,el("figcaption",null,"Selected figure from the paper"));body.append(copy,fig);details.append(summary,body);return details}
-function papers(id,title,items,note){const s=el("section","content");s.id=id;const sh=el("div","section-heading");sh.append(el("h2",null,title));if(note)sh.append(el("p",null,note));const list=el("div","paper-list");items.forEach(p=>list.append(paperItem(p)));s.append(sh,list);root.append(s)}
-papers("working","Working papers",d.workingPapers,"Click a paper for details.");papers("published","Published and forthcoming articles",d.publishedPapers);
-const w=el("section","content");w.id="wip";const wh=el("div","section-heading");wh.append(el("h2",null,"Research in progress"));const ul=el("ul","wip");d.researchInProgress.forEach(x=>{const li=el("li");li.append(el("strong",null,x.title));if(x.coauthors)li.append(el("span","coauthors",x.coauthors));ul.append(li)});w.append(wh,ul);root.append(w);
-function cvSection(id,title,items){const s=el("section","content");s.id=id;const sh=el("div","section-heading");sh.append(el("h2",null,title));const list=el("ul","cv-list");items.forEach(x=>{const li=el("li"),main=el("div","cv-entry");main.append(el("strong",null,x.title),el("span","cv-year",x.year));li.append(main);if(x.description)li.append(el("p",null,x.description));list.append(li)});s.append(sh,list);root.append(s)}
-cvSection("funding","Research funding",d.researchFunding);
-cvSection("awards","Awards",d.awards);
-const ts=el("section","content");ts.id="teaching";const th=el("div","section-heading");th.append(el("h2",null,"Teaching"));const courses=el("div","courses");d.teaching.forEach(c=>{const box=el("div","course");box.append(el("h3",null,c.name));const ol=el("ol");c.lessons.forEach((x,i)=>{const li=el("li");li.append(el("span",null,String(i+1).padStart(2,"0")),link(x.title+" ↗",x.url,true));ol.append(li)});box.append(ol);courses.append(box)});ts.append(th,courses);root.append(ts);
-const footer=el("footer");footer.id="contact";footer.append(el("p",null,d.profile.name),link(d.profile.email,"mailto:"+d.profile.email),el("span",null,d.profile.location),link("↑ Top","#top"));root.append(footer);
+}
+
+function papers(id, title, items, note) {
+  const section = el("section", "content");
+  section.id = id;
+
+  const heading = el("div", "section-heading");
+  heading.append(el("h2", null, title));
+
+  if (note) {
+    heading.append(el("p", null, note));
+  }
+
+  const list = el("div", "paper-list");
+
+  items.forEach((paper) => {
+    list.append(paperItem(paper));
+  });
+
+  section.append(heading, list);
+  root.append(section);
+}
+
+papers(
+  "working",
+  "Working papers",
+  d.workingPapers,
+  "Click a paper for details."
+);
+
+papers(
+  "published",
+  "Published and forthcoming articles",
+  d.publishedPapers
+);
+
+/* Research in progress */
+
+const workInProgress = el("section", "content");
+workInProgress.id = "wip";
+
+const workInProgressHeading = el("div", "section-heading");
+
+workInProgressHeading.append(
+  el("h2", null, "Research in progress")
+);
+
+const workInProgressList = el("ul", "wip");
+
+d.researchInProgress.forEach((item) => {
+  const li = el("li");
+
+  li.append(el("strong", null, item.title));
+
+  if (item.coauthors) {
+    li.append(
+      el("span", "coauthors", item.coauthors)
+    );
+  }
+
+  workInProgressList.append(li);
+});
+
+workInProgress.append(
+  workInProgressHeading,
+  workInProgressList
+);
+
+root.append(workInProgress);
+
+/* Research funding and awards */
+
+function cvSection(id, title, items) {
+  const section = el("section", "content");
+  section.id = id;
+
+  const heading = el("div", "section-heading");
+  heading.append(el("h2", null, title));
+
+  const list = el("ul", "cv-list");
+
+  items.forEach((item) => {
+    const li = el("li");
+    const main = el("div", "cv-entry");
+
+    main.append(
+      el("strong", null, item.title),
+      el("span", "cv-year", item.year)
+    );
+
+    li.append(main);
+
+    if (item.description) {
+      li.append(el("p", null, item.description));
+    }
+
+    list.append(li);
+  });
+
+  section.append(heading, list);
+  root.append(section);
+}
+
+cvSection(
+  "funding",
+  "Research funding",
+  d.researchFunding || []
+);
+
+cvSection(
+  "awards",
+  "Awards",
+  d.awards || []
+);
+
+/* Teaching */
+
+const teaching = el("section", "content");
+teaching.id = "teaching";
+
+const teachingHeading = el("div", "section-heading");
+teachingHeading.append(el("h2", null, "Teaching"));
+
+const courses = el("div", "courses");
+
+d.teaching.forEach((course) => {
+  const box = el("div", "course");
+
+  box.append(el("h3", null, course.name));
+
+  const lessons = el("ol");
+
+  course.lessons.forEach((lesson, index) => {
+    const li = el("li");
+
+    li.append(
+      el("span", null, String(index + 1).padStart(2, "0")),
+      link(`${lesson.title} ↗`, lesson.url, true)
+    );
+
+    lessons.append(li);
+  });
+
+  box.append(lessons);
+  courses.append(box);
+});
+
+teaching.append(teachingHeading, courses);
+root.append(teaching);
+
+/* Footer */
+
+const footer = el("footer");
+footer.id = "contact";
+
+footer.append(
+  el("p", null, d.profile.name),
+  link(d.profile.email, `mailto:${d.profile.email}`),
+  el("span", null, d.profile.location),
+  link("↑ Top", "#top")
+);
+
+root.append(footer);
