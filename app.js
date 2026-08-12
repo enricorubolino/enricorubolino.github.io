@@ -3,29 +3,29 @@
 const d = window.SITE_CONTENT;
 
 const el = (tag, cls, text) => {
-  const n = document.createElement(tag);
+  const node = document.createElement(tag);
 
   if (cls) {
-    n.className = cls;
+    node.className = cls;
   }
 
   if (text !== undefined) {
-    n.textContent = text;
+    node.textContent = text;
   }
 
-  return n;
+  return node;
 };
 
 const link = (text, href, external = false) => {
-  const a = el("a", null, text);
-  a.href = href;
+  const anchor = el("a", null, text);
+  anchor.href = href;
 
   if (external) {
-    a.target = "_blank";
-    a.rel = "noreferrer";
+    anchor.target = "_blank";
+    anchor.rel = "noreferrer";
   }
 
-  return a;
+  return anchor;
 };
 
 const root = document.getElementById("app");
@@ -65,7 +65,7 @@ introText.append(el("h1", null, d.profile.name));
 const affiliations = el("p", "affiliation");
 
 d.profile.affiliations.forEach((item, index) => {
-  if (index) {
+  if (index > 0) {
     affiliations.append(document.createElement("br"));
   }
 
@@ -139,7 +139,9 @@ function bibKey(paper) {
         .split(/\s+/)
         .pop() || "Paper";
 
-  const years = paper.status.match(/\b(?:19|20)\d{2}\b/g) || [];
+  const years =
+    paper.status.match(/\b(?:19|20)\d{2}\b/g) || [];
+
   const year = paper.year || years.pop() || "";
 
   const titleWords =
@@ -166,7 +168,9 @@ function bibText(paper) {
     `  author = {${bibEscape(bibAuthors(paper.byline))}}`
   ];
 
-  const years = paper.status.match(/\b(?:19|20)\d{2}\b/g) || [];
+  const years =
+    paper.status.match(/\b(?:19|20)\d{2}\b/g) || [];
+
   const year = paper.year || years.pop();
 
   if (year) {
@@ -190,20 +194,20 @@ ${fields.join(",\n")}
 }
 
 function bibLink(paper) {
-  const a = el("a", null, "BibTeX ↓");
+  const anchor = el("a", null, "BibTeX ↓");
 
   const file = new Blob([bibText(paper)], {
     type: "application/x-bibtex;charset=utf-8"
   });
 
-  a.href = URL.createObjectURL(file);
-  a.download = `${bibKey(paper)}.bib`;
-  a.title = "Download BibTeX citation";
+  anchor.href = URL.createObjectURL(file);
+  anchor.download = `${bibKey(paper)}.bib`;
+  anchor.title = "Download BibTeX citation";
 
-  return a;
+  return anchor;
 }
 
-/* Papers — no figure preview */
+/* Papers without figure previews */
 
 function paperItem(paper) {
   const details = el("details", "paper");
@@ -233,20 +237,23 @@ function paperItem(paper) {
   const actions = el("div", "actions");
 
   if (paper.paper) {
-    actions.append(link("Paper ↗", paper.paper, true));
+    actions.append(
+      link("Paper ↗", paper.paper, true)
+    );
   }
 
   actions.append(bibLink(paper));
 
   (paper.links || []).forEach(([text, url]) => {
     if (text && url) {
-      actions.append(link(`${text} ↗`, url, true));
+      actions.append(
+        link(`${text} ↗`, url, true)
+      );
     }
   });
 
   copy.append(actions);
   body.append(copy);
-
   details.append(summary, body);
 
   return details;
@@ -291,7 +298,10 @@ papers(
 const workInProgress = el("section", "content");
 workInProgress.id = "wip";
 
-const workInProgressHeading = el("div", "section-heading");
+const workInProgressHeading = el(
+  "div",
+  "section-heading"
+);
 
 workInProgressHeading.append(
   el("h2", null, "Research in progress")
@@ -300,17 +310,19 @@ workInProgressHeading.append(
 const workInProgressList = el("ul", "wip");
 
 d.researchInProgress.forEach((item) => {
-  const li = el("li");
+  const listItem = el("li");
 
-  li.append(el("strong", null, item.title));
+  listItem.append(
+    el("strong", null, item.title)
+  );
 
   if (item.coauthors) {
-    li.append(
+    listItem.append(
       el("span", "coauthors", item.coauthors)
     );
   }
 
-  workInProgressList.append(li);
+  workInProgressList.append(listItem);
 });
 
 workInProgress.append(
@@ -332,7 +344,7 @@ function cvSection(id, title, items) {
   const list = el("ul", "cv-list");
 
   items.forEach((item) => {
-    const li = el("li");
+    const listItem = el("li");
     const main = el("div", "cv-entry");
 
     main.append(
@@ -340,13 +352,15 @@ function cvSection(id, title, items) {
       el("span", "cv-year", item.year)
     );
 
-    li.append(main);
+    listItem.append(main);
 
     if (item.description) {
-      li.append(el("p", null, item.description));
+      listItem.append(
+        el("p", null, item.description)
+      );
     }
 
-    list.append(li);
+    list.append(listItem);
   });
 
   section.append(heading, list);
@@ -371,26 +385,31 @@ const teaching = el("section", "content");
 teaching.id = "teaching";
 
 const teachingHeading = el("div", "section-heading");
-teachingHeading.append(el("h2", null, "Teaching"));
+teachingHeading.append(
+  el("h2", null, "Teaching")
+);
 
 const courses = el("div", "courses");
 
 d.teaching.forEach((course) => {
   const box = el("div", "course");
-
   box.append(el("h3", null, course.name));
 
   const lessons = el("ol");
 
   course.lessons.forEach((lesson, index) => {
-    const li = el("li");
+    const listItem = el("li");
 
-    li.append(
-      el("span", null, String(index + 1).padStart(2, "0")),
+    listItem.append(
+      el(
+        "span",
+        null,
+        String(index + 1).padStart(2, "0")
+      ),
       link(`${lesson.title} ↗`, lesson.url, true)
     );
 
-    lessons.append(li);
+    lessons.append(listItem);
   });
 
   box.append(lessons);
@@ -407,7 +426,10 @@ footer.id = "contact";
 
 footer.append(
   el("p", null, d.profile.name),
-  link(d.profile.email, `mailto:${d.profile.email}`),
+  link(
+    d.profile.email,
+    `mailto:${d.profile.email}`
+  ),
   el("span", null, d.profile.location),
   link("↑ Top", "#top")
 );
