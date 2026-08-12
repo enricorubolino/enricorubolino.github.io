@@ -23,7 +23,7 @@ window.SITE_CONTENT = {
   },
   {
     "title": "Labor economics",
-    "description": "Labor supply, gender inequality, marriage market."
+    "description": "Labor supply, gender inequality, occupational regulation, marriage market."
   },
   {
     "title": "Social economics",
