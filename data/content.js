@@ -3,14 +3,15 @@ window.SITE_CONTENT = {
   "profile": {
     "name": "Enrico Rubolino",
     "affiliations": [
-      "Assistant Professor, CREST–Institut Polytechnique de Paris",
-      "Ambizione research fellow, University of Lausanne"
+      "Assistant Professor (tenure track, 2025-), CREST, Institut Polytechnique de Paris",
+      "Ambizione Research Fellow (2021-), University of Lausanne"
+      "Other affiliations: CESifo, ROCKWOOL Foundation"
     ],
     "email": "enrico.rubolino@hotmail.it",
     "cv": "https://drive.google.com/file/d/1yf3FzFr8e0WVMdzUUXTe1xfw9HuLZ0FC/view?usp=sharing",
     "scholar": "https://scholar.google.com/citations?hl=en&user=i5QBRO0AAAAJ",
-    "photo": "https://lh3.googleusercontent.com/sitesv/AG8ngQVzTqqbvAcOPCu_OriK-D_oAi-GzdSPtqMXhrWgHilEIm3ShSiBFIJbTh6cbTR-x-jMmYldS-iDFDXLtmxQMteB4cRAqoX4h6vJOapGCf_IsalVXdTooLmuRbHpTj1UTK5byJQjzyKT2I61Othi2xT5zESvYEvnQhQMA1muvI_C27OYWftB_uG1m5bxTJnII5e2tYwQ6eHn9FcpQAI3aGcNB3SLh3TI25QG=w1280",
-    "location": "University of Lausanne · Lausanne, Switzerland"
+    "photo": "assets/profile/foto_lausanne_short.png",
+    "location": "Paris, France · Lausanne, Switzerland"
   },
   "researchAreas": [
     {
@@ -162,21 +163,13 @@ window.SITE_CONTENT = {
   ],
   "researchInProgress": [
     {
-      "title": "Institutional Trust and Intergenerational Transmission",
-      "coauthors": ""
+      "title": "Intergenerational Transmission of Institutional Trust",
+      "coauthors": "Giorgia Conte, Enrico Rubolino & Giuseppe Sorrenti"
     },
     {
-      "title": "Technology, Gender Norms, and Domestic Work",
-      "coauthors": ""
+      "title": "Pathways Out of Violence",
+      "coauthors": "Sonia Bhalotra, Patrizia Ordine, Giuseppe Rose & Enrico Rubolino"
     },
-    {
-      "title": "Gender-Based Violence and Employment",
-      "coauthors": ""
-    },
-    {
-      "title": "Centralized Admissions and Medical Education",
-      "coauthors": ""
-    }
   ],
   "teaching": [
     {
