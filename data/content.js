@@ -178,7 +178,7 @@ window.SITE_CONTENT = {
       "coauthors": "Giorgia Conte, Enrico Rubolino & Giuseppe Sorrenti"
     },
     {
-      "title": "Pathways Out of Violence",
+      "title": "Pathways Out of Gender-Based Violence",
       "coauthors": "Sonia Bhalotra, Patrizia Ordine, Giuseppe Rose & Enrico Rubolino"
     },
     {
