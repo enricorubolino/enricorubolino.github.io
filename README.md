@@ -15,6 +15,8 @@ Il sito è pubblicato automaticamente da GitHub Pages all'indirizzo **https://en
 
 Ogni paper contiene: `title` (titolo), `byline` (autori), `status` (journal o working-paper series), `description`, `paper` (link al PDF), `image` (figura principale) e `links` (replication files, premi o altri materiali).
 
+Il pulsante **BibTeX** viene generato automaticamente usando `title`, `byline`, `status` e `paper`. Non occorre creare o aggiornare manualmente file `.bib`. Se vuoi indicare esplicitamente l'anno per un working paper, aggiungi il campo `"year": "2026"` nel relativo blocco.
+
 Per aggiungere un paper, copia un intero blocco esistente nella sezione `workingPapers` o `publishedPapers`, incollalo nella posizione desiderata e modifica i valori tra virgolette.
 
 ## Lavori in corso
