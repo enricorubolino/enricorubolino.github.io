@@ -37,7 +37,6 @@ window.SITE_CONTENT = {
       "status": "CESifo Working Paper 12575 · Rockwool Foundation Working Paper 096/26",
       "description": "I study a large-scale civic education program in Italian schools. Exposure improves rule compliance and civic behavior, and later raises voter turnout and support for redistribution.",
       "paper": "https://drive.google.com/file/d/1R1IRuFMtrsFP06rrTyK_b2uq583Glbs1/view?usp=drive_link",
-      "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQVJdb1yH5cGd5dqnLhrEN9_yohHxPsGsH1Q2lem-Q49p-nq0FquemH0h2DWVb4FVUsZzymRv3zx40-pPQInwMWoOEyugeKK-2M3QGDLeLSwqlO096wZbjaS6iHJLrpzg-YvXEa13WmnW7sEuT2t3bTN5X1xSgJCJZtsEjW6pSFVeyR8bH1E9CVO6y5bZ0oiNdyJAbLsKsl34lhz8ydqSmH-uwqorIGW7Y73=w1280"
     },
     {
       "title": "The Output Cost of Inheritance",
@@ -45,7 +44,6 @@ window.SITE_CONTENT = {
       "status": "CESifo Working Paper 12255 · CEPR Discussion Paper 20837",
       "description": "Using Swiss tax records, we compare earnings responses to inheritances and lottery wins over the life cycle. Anticipation attenuates inheritance responses; effects peak near retirement.",
       "paper": "https://drive.google.com/file/d/1MDJxMSKv-l-QwdRjy-7DNXlL6GW5_YB1/view?usp=drive_link",
-      "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQUiXxOdhprcf0VT-mHgQKNrDYcWzMgXxVdSOZQ1ClkMYrWfrWteaKTjgvQg2qjfx8hsA57Mh-zEP1AAAcyX3anzryLYIH5O9jmaZ-hukmSZay0s1Uk_gSVhMvHrNHMp7S-2Iz16AcLsGvk49fQFFA4DvIB6iEfvv6j_tTI1_Fs7NLYjtgpr8XFD3P6joh_06KMmTxmKM062xr48PWKrgsisQC4Kn7pE_g=w1280"
     },
     {
       "title": "Can Local Governments Tax the Rich?",
@@ -53,7 +51,6 @@ window.SITE_CONTENT = {
       "status": "CESifo Working Paper 10655",
       "description": "We exploit Italian tax decentralization to study local redistribution. Progressive schedules induce some mobility at the top, but still increase municipal revenue and spending.",
       "paper": "https://drive.google.com/file/d/1vCb8dzkh0qx2-GscqFoLjnnqDjUeNBdz/view?usp=drive_link",
-      "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQXjZlf4lv6wZsyuc7C12MWdozqvpwFIuE-wk2muK2gbhL53F3zFRUeo70ubXr8WmCr4uGnzvbSfXG5HeZlhJ66t_QYgeTst1zqYhM35GbJQ_-wK48Y6lyxWACrOjjdLANJi55rkOFDyrZohdOhoK-JJ3w50zE93E7bpkn77MDydZYNxJQZfZsoavJtW0-Z8-b83b7BiqOf7FJc1eowiM4-DY8BZD2tekISO=w1280",
       "links": [
         [
           "2018 SIEP Prize",
@@ -67,7 +64,6 @@ window.SITE_CONTENT = {
       "status": "CESifo Working Paper 11311",
       "description": "A spouse tax credit generates sharp income bunching among women, but not men. The asymmetry is consistent with gender identity costs tied to the dependent-spouse label.",
       "paper": "https://drive.google.com/file/d/1aPOLcABy1650li6TbtmRWzIOYRpPNU7p/view?usp=sharing",
-      "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQVoYRNty5J1ifCgo-XBI89JPk97OeIo2eJC4htjK-QU3jGU6EOAxpHnzRzbMSYXTfc3FK8kjt6r8O_3i-6nP4AtVYq6TyIVhBFE5SI7x1G8qAd1TbrHhbKNZ1r_bNoM2SAY_3tGFQ-TqKKbKf3sgte61gCbS5x1m10tcrpa3kr4u7MCnW8Yb5O40JbeYo20mzv5N1z2vfwkx1K4RnjrEIfoDQE0uPCLag=w1280"
     },
     {
       "title": "Taxing or Subsidizing the Gender Gap? Labor Market Responses to a Female Hiring Subsidy",
@@ -75,7 +71,6 @@ window.SITE_CONTENT = {
       "status": "CESifo Working Paper 9671 · VistINPS Working Paper 2022/47",
       "description": "A payroll tax cut strengthens women’s labor market attachment and almost recoups its fiscal cost, but employer incidence and rent sharing can widen pay gaps.",
       "paper": "https://drive.google.com/file/d/1kzmbKvgl2bW9sOG3QUf4kyd4dWZmKiEQ/view?usp=sharing",
-      "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQVUaexLAY1cboOUNlW5OFyUDlUAilp4oD7seQ0stxHzlO_DqxsEnpOeX3s6jImsqnyH0WpWVPIz733MgiBHLoznaD7m4Fp7TSwWTggtuM5WUbKEI7DYy1ivKfnB5TBbufrn7uOfrlP4jvyMnCGbWG4eycEUwT_Cj0xEa_ENcmyoOnTd7JpgXOG-2Zcn_Ja9-fNykEoPRfiEavJy1CRoxJmZmBFwq95r2n1A=w1280",
       "links": [
         [
           "2022 Young Economist Prize (IIPF, International Institute of Public Finance)",
@@ -97,7 +92,6 @@ window.SITE_CONTENT = {
       "status": "CESifo Working Paper 11998",
       "description": "Italy’s fascist-era bachelor tax shifted bargaining power and domestic work within marriage. The effects persisted across generations.",
       "paper": "https://drive.google.com/file/d/12gFI3ATuayrtxSI2Xvk37iNmIp1D97QG/view?usp=drive_link",
-      "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQX4aNC0qRx9MHbCKq9y5deme90mlGe9gsjPLIdcsiPXURhMxa5dXBooPXMQyyO3_OdaBXCR6paC81qrz7dMRI5eE3WKl7iHMc0cxGu6BgzkLXgzL5aWlmEFJOoO4QKgZZvVr6X5svBwaTGissgnNySJvOAkdlD4u4okPtVAkaAD8KGS1COPUeMjbTjWFClR5XjlCOVvYbQ6EVbud8qnQHp8Z5A1GDUnJw=w1280"
     },
     {
       "title": "What Determines the Capital Share over the Long Run of History?",
@@ -105,7 +99,6 @@ window.SITE_CONTENT = {
       "status": "IZA Discussion Paper 13199 · WID.world Working Paper",
       "description": "A long-run cross-country analysis of how suffrage, decolonization, redistribution, unionization, and wars shaped the division of national income.",
       "paper": "https://ftp.iza.org/dp13199.pdf",
-      "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQXssCz6_AQ6YWFn7dq01V5Ic9DN2wUaZsIyW0W4MhTj7LYvBk-DzpPB8Mxm6kWguSrFentT-5c9EiXB28jJHfYGxx9ecC7tkh9ejrDXfuuerlCneaYU5hG0TmnAeZcglrsna70eJ_CW0V7defoVW1LBjKci37pkpYDc1qpb-goHtUhffVzowD_HSnIMPX4EZ79z4zytOMUtP64Oayv2qbZYxeLvJO_Z9w=w1280"
     }
   ],
   "publishedPapers": [
@@ -115,7 +108,6 @@ window.SITE_CONTENT = {
       "status": "Conditionally accepted, American Economic Journal: Economic Policy",
       "description": "Tax non-compliance harms competitors’ revenue, employment, and productivity and worsens allocative efficiency.",
       "paper": "https://drive.google.com/file/d/1aEj2xoNwGQd4MeZi3l3wXKZGavKUQ2hD/view?usp=drive_link",
-      "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQUyIlQ6SVrzIltfPQ6CdfnFBT69_P9XlW6Ia3ScMk_KrE_KwDbvnWH2tpDQaNS3ty5H6QF3ADm9Li3S-4Vr5ndhtI5VZ_gYGZnfhuSMTcMUohtDfSitLNTbKw6fksT_sKi843cjjgWi3a2JsKW3l6UBeVNy3m-Hc0G8V3CMa6705CvXMqEm-9IV_b25W3pBss2vpz3DbivN23hkeP7tQVDMIOMP-9R_NS6H=w1280"
     },
     {
       "title": "Austerity Harmed Student Achievement",
@@ -123,11 +115,14 @@ window.SITE_CONTENT = {
       "status": "The Economic Journal 134(659), 1199–1227, 2024",
       "description": "Municipal spending cuts reduce standardized test performance, with larger effects for disadvantaged students.",
       "paper": "https://drive.google.com/file/d/1MLQ1y71Oksp5TkQEuu9NnY0StIJcnprR/view?usp=sharing",
-      "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQW5q2SlbthxS7N7KyU71cy26iSVnh2mI9NCC0moGXJIvlq82JOEs7-aNQanH2w7eMgbLpLcUKUHrx75h25EbrT23dd2FActJd4Muyg2Caq-UgmxO4YwJ4x88-L8EFm0or8yIRy_pCX22h5WIekd8bvLumRUA02Bk12Dsy2YddPsjwcGT3DVxaNNjUidtlae_nojJ5xrwF0-0xieJzJasMUpx5iq0CBPKoyN=w1280",
       "links": [
         [
           "Replication files",
-          "https://zenodo.org/"
+          "https://zenodo.org/records/10013359"
+        ]
+          [
+          "Online Appendix",
+          "https://academic.oup.com/ej/article/134/659/1199/7328935"
         ]
       ]
     },
@@ -137,15 +132,23 @@ window.SITE_CONTENT = {
       "status": "Journal of Public Economics 219, 104833, 2023",
       "description": "Stronger enforcement expands local governments’ ability to set progressive tax schedules and fund public spending.",
       "paper": "https://drive.google.com/file/d/15tA7TR9QDAH0oHpKMaFqAPkzer4sr3l0/view?usp=sharing",
-      "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQULplCXAwJXi7iqK8uCV3vPDSMMDKSqNnCTf6vCMBpAcoYgIyvp6cM6F33memm2BmlGr7N4imS2d9WlK0jiO5S3Nk7-Rlm5WBzvCAAhunfoKRAaWzAeyM9A7IhdYN4VW77dxFJkn0147LgGqrfuKsQtIComOdLcJV5Lu53KzZ7q5nSO1WrO9Ek6KNUi5AldJhxYpS-oBm6LMFZGQvMDPykV2xavZ8F5nw=w1280"
+   "links": [
+        [
+          "Replication files",
+          "https://drive.google.com/file/d/1LNeh6yS8wJ075TIsbRqlRwXe3Q0wwznz/view?usp=share_link"
+        ]
+        [
+          "Online Appendix",
+          "https://ars.els-cdn.com/content/image/1-s2.0-S0047272723000154-mmc1.pdf"
+        ]
+      ]    
     },
     {
       "title": "Knocking on Parents’ Doors: Regulation and Intergenerational Mobility",
       "byline": "Sauro Mocetti, Giacomo Roma & Enrico Rubolino",
       "status": "Journal of Human Resources 57(2), 525–554, 2022",
       "description": "Relaxing occupational regulation reduces the propensity of children to follow their parents’ careers, especially among less able children.",
-      "paper": "https://drive.google.com/file/d/1CO9TKocC2UILI7C3ngjvD0KKZ_p_CQea/view?usp=sharing",
-      "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQVgxo7rJ-vZdOcYpECVh1xY-JNO7a49huxaFHdK6xR3icRz671YmljBQogxHplZBWs7PigURyQ_FqVxU9L_hWyrZxJubTN5zY5Iv50CoKuH5xrpo_kMSsEshT65TJgHAFl0zUqb4PUpp27UOSlu-Q8vW3Z4iej-3gzumP_bEe0huGpTVKyNZy5-NQqN1iyC0z8EB3SJcNkqsVOh9xyGG5XtOP06bwVB6w=w1280"
+      "paper": "https://drive.google.com/file/d/1CO9TKocC2UILI7C3ngjvD0KKZ_p_CQea/view?usp=sharing",   
     },
     {
       "title": "The Impact of Socioeconomic Factors on the Incidence and Characteristics of First-Episode Psychosis",
@@ -153,7 +156,6 @@ window.SITE_CONTENT = {
       "status": "Epidemiology and Psychiatric Sciences 34, e45, 1–14, 2025",
       "description": "This study examines how area-level socioeconomic conditions shape the incidence and characteristics of first-episode psychosis in Emilia-Romagna.",
       "paper": "https://drive.google.com/file/d/1EnLpT1Sf1SuyeyDJarnDce6DBvSIL2O7/view?usp=sharing",
-      "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQWSMoEWunDtYUC4MAgL61BermGbh8bcai8S2uFYIdM2C_Dmeh7Q45Cj2A2yLIZL0lMDEakLzKzX0O2QkFmeDLvAQNxfpaZumtY6UId9YIDX8YnxxFiUl92_SNZ5yv4tek7x8wz_twlPVQrHH4wBER4W7rlkq9jl693J0RasUVsJkTCQhE-dV5D8YFbJmsyAPugLB1M-L3beWzrYCYjxgsuDWJYQbQOMOA0G=w1280"
     },
     {
       "title": "Tax Progressivity and Top Incomes: Evidence from Tax Reforms",
@@ -161,7 +163,6 @@ window.SITE_CONTENT = {
       "status": "The Journal of Economic Inequality 18(3), 261–289, 2020",
       "description": "Reductions in tax progressivity generated large and persistent increases in top income shares.",
       "paper": "https://drive.google.com/file/d/17wmQq1P-WtKCah4xbP2y-cyr9iwEmMs1/view?usp=sharing",
-      "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQXTisVkCzqfBsqdQv7QltUw79JmYOUIyEmQnEmNGc-v65cAVtc6ODi5EL0VCIJ0AfTuKT0ImxhAdXdDaAvXukVa3I-0cFdFVCFAaHx1kQjhE8Leu7NG2H4EELutXpXFIj6IPpq7O7fRL0IyLaC5wE4-JXy0TYuDFYK-sjVhFEdFCMw_xhL_s117lDyxNPtWjLneWSB5rAijdYuvSktGx8rM_MQ1LiE-aw=w1280"
     },
     {
       "title": "Trends and Gradients in Top Tax Elasticities: Cross-Country Evidence, 1900–2014",
@@ -169,7 +170,6 @@ window.SITE_CONTENT = {
       "status": "International Tax and Public Finance 26(3), 457–485, 2019",
       "description": "Tax responsiveness at the top fell after 1950 and rose sharply after 1980, with a pronounced income gradient.",
       "paper": "https://drive.google.com/file/d/1m_V1vlneoBj7TDciwnuAVUDforp9dX6u/view?usp=drive_open",
-      "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQXe8Z2h_Kgh0u9MC_y1ch0OhKxILX-3EYuckAeNJw9vIn_cbJ9TIsRzypZWL6MfJfAZQfYWExnIL5PZXyAXZrT_fRno9iL9nuzYdcWb4xBygjkJWt0plmCyn88_LVpcP6EdgTP5T7CUlmzkdHNVkl8BW8CMgyA5p7TmtGm2kJvJt_d0qZUhjnLgI-9vrd0yg9JuZF3pKcU__UdfbHDQeJynpssU1xvqYqA3=w1280"
     }
   ],
   "researchInProgress": [
