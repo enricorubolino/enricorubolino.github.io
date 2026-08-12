@@ -31,25 +31,77 @@ const link = (text, href, external = false) => {
 const root = document.getElementById("app");
 root.id = "top";
 
+/* Google Analytics helpers */
+
+function trackEvent(eventName, parameters = {}) {
+  if (typeof window.gtag !== "function") {
+    return;
+  }
+
+  window.gtag("event", eventName, parameters);
+}
+
+function trackedLink(
+  text,
+  href,
+  external = false,
+  eventName = "link_click",
+  eventParameters = {}
+) {
+  const anchor = link(text, href, external);
+
+  anchor.addEventListener("click", () => {
+    trackEvent(eventName, {
+      link_text: text,
+      link_url: href,
+      ...eventParameters
+    });
+  });
+
+  return anchor;
+}
+
 /* Header and navigation */
 
 const header = el("header");
-header.append(link(d.profile.name, "#top"));
+
+header.append(
+  trackedLink(
+    d.profile.name,
+    "#top",
+    false,
+    "navigation_click",
+    { destination: "top" }
+  )
+);
+
 header.firstChild.className = "name";
 
 const nav = el("nav");
 
 [
-  ["Working papers", "#working"],
-  ["Published and forthcoming articles", "#published"],
-  ["Research in progress", "#wip"],
-  ["Research funding", "#funding"],
-  ["Awards", "#awards"],
-  ["Teaching", "#teaching"],
-  ["CV", d.profile.cv],
-  ["Contact details", "#contact"]
-].forEach(([text, href]) => {
-  nav.append(link(text, href, href.startsWith("http")));
+  ["Working papers", "#working", "working_papers"],
+  [
+    "Published and forthcoming articles",
+    "#published",
+    "published_articles"
+  ],
+  ["Research in progress", "#wip", "research_in_progress"],
+  ["Research funding", "#funding", "research_funding"],
+  ["Awards", "#awards", "awards"],
+  ["Teaching", "#teaching", "teaching"],
+  ["CV", d.profile.cv, "cv"],
+  ["Contact details", "#contact", "contact"]
+].forEach(([text, href, destination]) => {
+  nav.append(
+    trackedLink(
+      text,
+      href,
+      href.startsWith("http"),
+      text === "CV" ? "cv_click" : "navigation_click",
+      { destination }
+    )
+  );
 });
 
 header.append(nav);
@@ -98,9 +150,27 @@ introText.append(researchSummary);
 const introLinks = el("div", "intro-links");
 
 introLinks.append(
-  link("CV ↗", d.profile.cv, true),
-  link("Google Scholar ↗", d.profile.scholar, true),
-  link("Email ↗", `mailto:${d.profile.email}`)
+  trackedLink(
+    "CV ↗",
+    d.profile.cv,
+    true,
+    "cv_click",
+    { placement: "introduction" }
+  ),
+  trackedLink(
+    "Google Scholar ↗",
+    d.profile.scholar,
+    true,
+    "scholar_click",
+    { placement: "introduction" }
+  ),
+  trackedLink(
+    "Email ↗",
+    `mailto:${d.profile.email}`,
+    false,
+    "email_click",
+    { placement: "introduction" }
+  )
 );
 
 introText.append(introLinks);
@@ -178,9 +248,13 @@ function bibText(paper) {
   }
 
   if (published) {
-    fields.push(`  journal = {${bibEscape(paper.status)}}`);
+    fields.push(
+      `  journal = {${bibEscape(paper.status)}}`
+    );
   } else {
-    fields.push(`  note = {${bibEscape(paper.status)}}`);
+    fields.push(
+      `  note = {${bibEscape(paper.status)}}`
+    );
   }
 
   if (paper.paper) {
@@ -193,7 +267,7 @@ ${fields.join(",\n")}
 `;
 }
 
-function bibLink(paper) {
+function bibLink(paper, sectionName) {
   const anchor = el("a", null, "BibTeX ↓");
 
   const file = new Blob([bibText(paper)], {
@@ -204,12 +278,42 @@ function bibLink(paper) {
   anchor.download = `${bibKey(paper)}.bib`;
   anchor.title = "Download BibTeX citation";
 
+  anchor.addEventListener("click", () => {
+    trackEvent("bibtex_download", {
+      paper_title: paper.title,
+      paper_status: paper.status,
+      paper_section: sectionName,
+      file_name: anchor.download
+    });
+  });
+
   return anchor;
 }
 
 /* Papers without figure previews */
 
-function paperItem(paper) {
+function classifyPaperLink(text) {
+  const normalizedText = text.toLowerCase();
+
+  if (normalizedText.includes("replication")) {
+    return "replication_click";
+  }
+
+  if (normalizedText.includes("appendix")) {
+    return "appendix_click";
+  }
+
+  if (
+    normalizedText.includes("award") ||
+    normalizedText.includes("prize")
+  ) {
+    return "award_link_click";
+  }
+
+  return "paper_resource_click";
+}
+
+function paperItem(paper, sectionName) {
   const details = el("details", "paper");
   const summary = el("summary");
   const head = el("div");
@@ -229,6 +333,16 @@ function paperItem(paper) {
 
   summary.append(head, toggle);
 
+  details.addEventListener("toggle", () => {
+    if (details.open) {
+      trackEvent("paper_details_open", {
+        paper_title: paper.title,
+        paper_status: paper.status,
+        paper_section: sectionName
+      });
+    }
+  });
+
   const body = el("div", "paper-details");
   const copy = el("div");
 
@@ -238,16 +352,37 @@ function paperItem(paper) {
 
   if (paper.paper) {
     actions.append(
-      link("Paper ↗", paper.paper, true)
+      trackedLink(
+        "Paper ↗",
+        paper.paper,
+        true,
+        "paper_click",
+        {
+          paper_title: paper.title,
+          paper_status: paper.status,
+          paper_section: sectionName
+        }
+      )
     );
   }
 
-  actions.append(bibLink(paper));
+  actions.append(bibLink(paper, sectionName));
 
   (paper.links || []).forEach(([text, url]) => {
     if (text && url) {
       actions.append(
-        link(`${text} ↗`, url, true)
+        trackedLink(
+          `${text} ↗`,
+          url,
+          true,
+          classifyPaperLink(text),
+          {
+            resource_name: text,
+            paper_title: paper.title,
+            paper_status: paper.status,
+            paper_section: sectionName
+          }
+        )
       );
     }
   });
@@ -273,7 +408,7 @@ function papers(id, title, items, note) {
   const list = el("div", "paper-list");
 
   items.forEach((paper) => {
-    list.append(paperItem(paper));
+    list.append(paperItem(paper, id));
   });
 
   section.append(heading, list);
@@ -385,6 +520,7 @@ const teaching = el("section", "content");
 teaching.id = "teaching";
 
 const teachingHeading = el("div", "section-heading");
+
 teachingHeading.append(
   el("h2", null, "Teaching")
 );
@@ -406,7 +542,16 @@ d.teaching.forEach((course) => {
         null,
         String(index + 1).padStart(2, "0")
       ),
-      link(`${lesson.title} ↗`, lesson.url, true)
+      trackedLink(
+        `${lesson.title} ↗`,
+        lesson.url,
+        true,
+        "teaching_material_click",
+        {
+          course_name: course.name,
+          lesson_title: lesson.title
+        }
+      )
     );
 
     lessons.append(listItem);
@@ -426,12 +571,21 @@ footer.id = "contact";
 
 footer.append(
   el("p", null, d.profile.name),
-  link(
+  trackedLink(
     d.profile.email,
-    `mailto:${d.profile.email}`
+    `mailto:${d.profile.email}`,
+    false,
+    "email_click",
+    { placement: "footer" }
   ),
   el("span", null, d.profile.location),
-  link("↑ Top", "#top")
+  trackedLink(
+    "↑ Top",
+    "#top",
+    false,
+    "navigation_click",
+    { destination: "top", placement: "footer" }
+  )
 );
 
 root.append(footer);
