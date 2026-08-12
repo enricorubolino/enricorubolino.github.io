@@ -6,7 +6,7 @@ window.SITE_CONTENT = {
       "Assistant Professor, CREST–Institut Polytechnique de Paris",
       "Ambizione research fellow, University of Lausanne"
     ],
-    "email": "enrico.rubolino@unil.ch",
+    "email": "enrico.rubolino@hotmail.it",
     "cv": "https://drive.google.com/file/d/1yf3FzFr8e0WVMdzUUXTe1xfw9HuLZ0FC/view?usp=sharing",
     "scholar": "https://scholar.google.com/citations?hl=en&user=i5QBRO0AAAAJ",
     "photo": "https://lh3.googleusercontent.com/sitesv/AG8ngQVzTqqbvAcOPCu_OriK-D_oAi-GzdSPtqMXhrWgHilEIm3ShSiBFIJbTh6cbTR-x-jMmYldS-iDFDXLtmxQMteB4cRAqoX4h6vJOapGCf_IsalVXdTooLmuRbHpTj1UTK5byJQjzyKT2I61Othi2xT5zESvYEvnQhQMA1muvI_C27OYWftB_uG1m5bxTJnII5e2tYwQ6eHn9FcpQAI3aGcNB3SLh3TI25QG=w1280",
