@@ -178,7 +178,7 @@ window.SITE_CONTENT = {
       "coauthors": "Giorgia Conte, Enrico Rubolino & Giuseppe Sorrenti"
     },
     {
-      "title": "Pathways Out of Gender-Based Violence",
+      "title": "Pathways Out of Violence",
       "coauthors": "Sonia Bhalotra, Patrizia Ordine, Giuseppe Rose & Enrico Rubolino"
     },
     {
@@ -193,6 +193,33 @@ window.SITE_CONTENT = {
       "title": "How Cross-Border Workers Shape Local Economies",
       "coauthors": "Emanuele Di Carlo, Sergio Galletta & Enrico Rubolino"
     }
+  ],
+  "researchFunding": [
+    {
+      "title": "Research grant (Swiss National Science Foundation)",
+      "year": "2026-2030",
+      "description": "The economics of inheritance and inter-vivos gifts (with Marius Brülhart, Aurélien Eyquem, and Isabel Martínez); CHF 827,832 (USD 1,035,633)."
+    },
+    {
+      "title": "Ambizione Research Grant (Swiss National Science Foundation)",
+      "year": "2025-2029",
+      "description": "Gender inequality and public policy - Sole contractor; CHF 685,690 (USD 808,917)."
+    },
+    {
+      "title": "J-PAL European Social Inclusion Initiative",
+      "year": "2025",
+      "description": "Evaluating incentives for firms to hire abused women (with Sonia Bhalotra, Antonio Delfino, Matteo Sandi, and Andreas Stegmann); EUR 49,510."
+    },
+    {"title": "VisitINPS Fellowship", "year": "2020; 2021; 2022; 2023", "description": ""},
+    {"title": "Robert Schalkenbach Foundation Research Grant", "year": "2020", "description": ""},
+    {"title": "Research scholarship (Bank of Italy)", "year": "2017", "description": ""},
+    {"title": "Outstanding distinction, Bonaldo Stringer fellowship (Bank of Italy)", "year": "2016", "description": ""}
+  ],
+  "awards": [
+    {"title": "Young Economist Award (International Institute of Public Finance)", "year": "2022", "description": ""},
+    {"title": "Carlo Dell'Arringa Young Labor Economist Award (AIEL)", "year": "2022", "description": ""},
+    {"title": "W.E. Upjohn Institute Early Career Research Award", "year": "2021", "description": ""},
+    {"title": "SIEP (Italian Society of Public Economics) Best Paper Award", "year": "2018", "description": ""}
   ],
   "teaching": [
     {
