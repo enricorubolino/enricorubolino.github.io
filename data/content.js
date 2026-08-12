@@ -119,7 +119,7 @@ window.SITE_CONTENT = {
         [
           "Replication files",
           "https://zenodo.org/records/10013359"
-        ]
+        ],
           [
           "Online Appendix",
           "https://academic.oup.com/ej/article/134/659/1199/7328935"
@@ -136,7 +136,7 @@ window.SITE_CONTENT = {
         [
           "Replication files",
           "https://drive.google.com/file/d/1LNeh6yS8wJ075TIsbRqlRwXe3Q0wwznz/view?usp=share_link"
-        ]
+        ],
         [
           "Online Appendix",
           "https://ars.els-cdn.com/content/image/1-s2.0-S0047272723000154-mmc1.pdf"
