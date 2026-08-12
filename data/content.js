@@ -19,15 +19,15 @@ window.SITE_CONTENT = {
 "researchAreas": [
   {
     "title": "Public economics",
-    "description": "Tax design and enforcement, tax evasion, fiscal decentralization, local taxation, income progressivity, redistribution, and behavioral and market responses to public policies."
+    "description": "Taxation, inequality, tax evasion, fiscal decentralization, redistribution, intergenerational mobility."
   },
   {
     "title": "Labor economics",
-    "description": "Labor supply, employment and wages, wealth shocks, hiring subsidies, retirement, job matching, household bargaining, and gender inequality within families and firms."
+    "description": "Labor supply, wealth shocks, hiring subsidies, household bargaining, gender inequality, regulation."
   },
   {
-    "title": "Cultural economics",
-    "description": "Social norms, civic capital, institutional trust, civic education, political participation, gender norms, and the intergenerational transmission of values and behavior."
+    "title": "Social economics",
+    "description": "Social norms, civic capital, institutional trust, civic education."
   }
 ],
   "workingPapers": [
@@ -181,6 +181,18 @@ window.SITE_CONTENT = {
       "title": "Pathways Out of Violence",
       "coauthors": "Sonia Bhalotra, Patrizia Ordine, Giuseppe Rose & Enrico Rubolino"
     },
+    {
+      "title": "Tax-Induced Downsizing",
+      "coauthors": "Enrico Miglino, Sauro Mocetti, Bernardo Mottironi & Enrico Rubolino"
+    },
+    {
+      "title": "The Gender Wage Gap and Labor Market Tightness",
+      "coauthors": "Sonia Bhalotra, Roland Rathelot & Enrico Rubolino"
+    },
+     {
+      "title": "How Cross-Border Workers Shape Local Economies",
+      "coauthors": "Emanuele Di Carlo, Sergio Galletta & Enrico Rubolino"
+    }
   ],
   "teaching": [
     {
