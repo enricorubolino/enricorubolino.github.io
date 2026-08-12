@@ -3,8 +3,8 @@ window.SITE_CONTENT = {
   "profile": {
     "name": "Enrico Rubolino",
     "affiliations": [
-      "Assistant Professor, CREST–ENSAE–Institut Polytechnique de Paris",
-      "Senior Researcher, University of Lausanne"
+      "Assistant Professor, CREST–Institut Polytechnique de Paris",
+      "Ambizione research fellow, University of Lausanne"
     ],
     "email": "enrico.rubolino@unil.ch",
     "cv": "https://drive.google.com/file/d/1yf3FzFr8e0WVMdzUUXTe1xfw9HuLZ0FC/view?usp=sharing",
