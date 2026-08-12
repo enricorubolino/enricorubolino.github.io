@@ -4,9 +4,9 @@ window.SITE_CONTENT = {
     "name": "Enrico Rubolino",
     "affiliations": [
       "Assistant Professor (tenure track, 2025-), CREST, Institut Polytechnique de Paris",
-      "Ambizione Research Fellow (2021-), University of Lausanne"
-      "PhD at the University of Essex, 2021."
-     "Affiliations: CESifo, ROCKWOOL Foundation"
+      "Ambizione Research Fellow (2021-), University of Lausanne",
+      "PhD at the University of Essex, 2021",
+      "Affiliations: CESifo, ROCKWOOL Foundation"
     ],
     "email": "enrico.rubolino@hotmail.it",
     "cv": "https://drive.google.com/file/d/1yf3FzFr8e0WVMdzUUXTe1xfw9HuLZ0FC/view?usp=sharing",
@@ -78,10 +78,14 @@ window.SITE_CONTENT = {
         [
           "2022 Young Economist Prize (IIPF, International Institute of Public Finance)",
           "https://www.iipf.org/yeaw.htm"
-        ]
+        ],
         [
           "2022 Carlo dell'Arringa Prize (AIEL, Associazione Italiana Economisti del Lavoro)",
           "https://www.aiel.it/Home/Prize_Winners?prize_id=3"
+        ],
+        [
+          "2020 Early Career Research Award (Upjohn Institute)",
+          "https://research.upjohn.org/grants/"
         ]
       ]
     },
