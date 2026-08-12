@@ -5,7 +5,8 @@ window.SITE_CONTENT = {
     "affiliations": [
       "Assistant Professor (tenure track, 2025-), CREST, Institut Polytechnique de Paris",
       "Ambizione Research Fellow (2021-), University of Lausanne"
-      "Other affiliations: CESifo, ROCKWOOL Foundation"
+      "PhD at the University of Essex, 2021."
+     "Affiliations: CESifo, ROCKWOOL Foundation"
     ],
     "email": "enrico.rubolino@hotmail.it",
     "cv": "https://drive.google.com/file/d/1yf3FzFr8e0WVMdzUUXTe1xfw9HuLZ0FC/view?usp=sharing",
