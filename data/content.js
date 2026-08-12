@@ -55,7 +55,7 @@ window.SITE_CONTENT = {
       "links": [
         [
           "2018 SIEP Prize",
-          "https://www.siepweb.it/"
+          "https://www.siepweb.it/siep/wp/en/en/premio-siep/"
         ]
       ]
     },
@@ -63,7 +63,7 @@ window.SITE_CONTENT = {
       "title": "Tax Notches and Household Labor Supply: Evidence from the Italian Spouse Tax Credit",
       "byline": "Tommaso Giommoni & Enrico Rubolino",
       "status": "CESifo Working Paper 11311",
-      "description": "A spouse tax credit generates sharp income bunching among women but not men. The asymmetry is consistent with gender identity costs tied to the dependent-spouse label.",
+      "description": "A spouse tax credit generates sharp income bunching among women, but not men. The asymmetry is consistent with gender identity costs tied to the dependent-spouse label.",
       "paper": "https://drive.google.com/file/d/1aPOLcABy1650li6TbtmRWzIOYRpPNU7p/view?usp=sharing",
       "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQVoYRNty5J1ifCgo-XBI89JPk97OeIo2eJC4htjK-QU3jGU6EOAxpHnzRzbMSYXTfc3FK8kjt6r8O_3i-6nP4AtVYq6TyIVhBFE5SI7x1G8qAd1TbrHhbKNZ1r_bNoM2SAY_3tGFQ-TqKKbKf3sgte61gCbS5x1m10tcrpa3kr4u7MCnW8Yb5O40JbeYo20mzv5N1z2vfwkx1K4RnjrEIfoDQE0uPCLag=w1280"
     },
@@ -76,8 +76,12 @@ window.SITE_CONTENT = {
       "image": "https://lh3.googleusercontent.com/sitesv/AG8ngQVUaexLAY1cboOUNlW5OFyUDlUAilp4oD7seQ0stxHzlO_DqxsEnpOeX3s6jImsqnyH0WpWVPIz733MgiBHLoznaD7m4Fp7TSwWTggtuM5WUbKEI7DYy1ivKfnB5TBbufrn7uOfrlP4jvyMnCGbWG4eycEUwT_Cj0xEa_ENcmyoOnTd7JpgXOG-2Zcn_Ja9-fNykEoPRfiEavJy1CRoxJmZmBFwq95r2n1A=w1280",
       "links": [
         [
-          "Awards",
-          "https://www.iipf.org/"
+          "2022 Young Economist Prize (IIPF, International Institute of Public Finance)",
+          "https://www.iipf.org/yeaw.htm"
+        ]
+        [
+          "2022 Carlo dell'Arringa Prize (AIEL, Associazione Italiana Economisti del Lavoro)",
+          "https://www.aiel.it/Home/Prize_Winners?prize_id=3"
         ]
       ]
     },
