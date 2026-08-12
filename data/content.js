@@ -14,20 +14,22 @@ window.SITE_CONTENT = {
     "photo": "assets/profile/foto_lausanne_short.png",
     "location": "Paris, France · Lausanne, Switzerland"
   },
-  "researchAreas": [
-    {
-      "title": "Public economics",
-      "description": "I study how tax design, enforcement, and fiscal decentralization affect individual behavior, government revenues, redistribution, and the capacity of local governments to tax mobile tax bases."
-    },
-    {
-      "title": "Labor and gender economics",
-      "description": "My work examines how taxes, hiring subsidies, wealth shocks, and social norms shape labor supply, job matching, household bargaining, and gender inequalities within families and firms."
-    },
-    {
-      "title": "Political economy and human capital",
-      "description": "I investigate how education and public institutions influence civic values, political participation, intergenerational mobility, and educational achievement."
-    }
-  ],
+"researchIntro": "My research revolves around three main areas:",
+
+"researchAreas": [
+  {
+    "title": "Public economics",
+    "description": "Tax design and enforcement, tax evasion, fiscal decentralization, local taxation, income progressivity, redistribution, and behavioral and market responses to public policies."
+  },
+  {
+    "title": "Labor economics",
+    "description": "Labor supply, employment and wages, wealth shocks, hiring subsidies, retirement, job matching, household bargaining, and gender inequality within families and firms."
+  },
+  {
+    "title": "Cultural economics",
+    "description": "Social norms, civic capital, institutional trust, civic education, political participation, gender norms, and the intergenerational transmission of values and behavior."
+  }
+],
   "workingPapers": [
     {
       "title": "Growing the Civic Mind: Civic Education, Civic Behavior, and Political Institutions",
