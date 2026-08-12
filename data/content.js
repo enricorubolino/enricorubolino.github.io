@@ -23,7 +23,7 @@ window.SITE_CONTENT = {
   },
   {
     "title": "Labor economics",
-    "description": "Labor supply, hiring subsidies, household bargaining, gender inequality."
+    "description": "Labor supply, gender inequality, marriage market."
   },
   {
     "title": "Social economics",
