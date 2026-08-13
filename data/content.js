@@ -5,7 +5,7 @@ window.SITE_CONTENT = {
     "affiliations": [
       "Assistant Professor (tenure track, 2025-), CREST, Institut Polytechnique de Paris",
       "Research Fellow (2021-), University of Lausanne",
-      "PhD at the University of Essex, 2021",
+      "PhD in Economics, University of Essex, 2021",
       "Affiliations: CESifo, ROCKWOOL Foundation"
     ],
     "email": "enrico.rubolino@hotmail.it",
