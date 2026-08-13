@@ -49,7 +49,7 @@ window.SITE_CONTENT = {
       "title": "Can Local Governments Tax the Rich?",
       "byline": "Enrico Rubolino & Tommaso Giommoni",
       "status": "CESifo Working Paper 10655",
-      "description": "Progressive local tax schedules induce some out-mobility among the rich, but still increase municipal revenue and spending.",
+      "description": "Progressive local tax schedules induce some out-migration among the rich, but still increase municipal revenue and spending.",
       "paper": "https://drive.google.com/file/d/1vCb8dzkh0qx2-GscqFoLjnnqDjUeNBdz/view?usp=drive_link",
       "links": [
         [
