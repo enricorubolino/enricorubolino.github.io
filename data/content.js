@@ -49,7 +49,7 @@ window.SITE_CONTENT = {
       "title": "Can Local Governments Tax the Rich?",
       "byline": "Enrico Rubolino & Tommaso Giommoni",
       "status": "CESifo Working Paper 10655",
-      "description": "We exploit Italian tax decentralization to study local redistribution. Progressive local tax schedules induce some mobility at the top, but still increase municipal revenue and spending.",
+      "description": "Progressive local tax schedules induce some out-mobility among the rich, but still increase municipal revenue and spending.",
       "paper": "https://drive.google.com/file/d/1vCb8dzkh0qx2-GscqFoLjnnqDjUeNBdz/view?usp=drive_link",
       "links": [
         [
@@ -106,14 +106,14 @@ window.SITE_CONTENT = {
       "title": "Market Externalities of Tax Evasion",
       "byline": "Irene Di Marzio, Sauro Mocetti & Enrico Rubolino",
       "status": "Conditionally accepted, American Economic Journal: Economic Policy",
-      "description": "Tax non-compliance harms competitors’ revenue, employment, and productivity and worsens allocative efficiency.",
+      "description": "Firms' tax non-compliance harms competitors’ revenue, employment, and productivity, worsening allocative efficiency.",
       "paper": "https://drive.google.com/file/d/1aEj2xoNwGQd4MeZi3l3wXKZGavKUQ2hD/view?usp=drive_link",
     },
     {
       "title": "Austerity Harmed Student Achievement",
       "byline": "Caterina Pavese & Enrico Rubolino",
       "status": "The Economic Journal 134(659), 1199–1227, 2024",
-      "description": "Municipal spending cuts reduce standardized test performance, with larger effects for disadvantaged students.",
+      "description": "Austerity-driven spending cuts reduce standardized test performance, with larger effects for disadvantaged students.",
       "paper": "https://drive.google.com/file/d/1MLQ1y71Oksp5TkQEuu9NnY0StIJcnprR/view?usp=sharing",
       "links": [
         [
@@ -130,7 +130,7 @@ window.SITE_CONTENT = {
       "title": "Does Weak Enforcement Deter Tax Progressivity?",
       "byline": "Enrico Rubolino",
       "status": "Journal of Public Economics 219, 104833, 2023",
-      "description": "Stronger enforcement expands local governments’ ability to set progressive tax schedules and fund public spending.",
+      "description": "Stronger tax enforcement expands local governments’ ability to set progressive tax schedules and fund public spending.",
       "paper": "https://drive.google.com/file/d/15tA7TR9QDAH0oHpKMaFqAPkzer4sr3l0/view?usp=sharing",
    "links": [
         [
