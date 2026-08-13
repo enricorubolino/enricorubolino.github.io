@@ -205,7 +205,7 @@ window.SITE_CONTENT = {
       "description": "The economics of inheritance and inter-vivos gifts (with Marius Brülhart, Aurélien Eyquem, and Isabel Martínez); CHF 827,832 (USD 1,035,633)."
     },
     {
-      "title": "Ambizione Research Grant (Swiss National Science Foundation)",
+      "title": "Ambizione research grant (Swiss National Science Foundation)",
       "year": "2025-2029",
       "description": "Gender inequality and public policy - Sole contractor; CHF 685,690 (USD 808,917)."
     },
