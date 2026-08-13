@@ -47,9 +47,9 @@ window.SITE_CONTENT = {
     },
     {
       "title": "Can Local Governments Tax the Rich?",
-      "byline": "Tommaso Giommoni & Enrico Rubolino",
+      "byline": "Enrico Rubolino & Tommaso Giommoni",
       "status": "CESifo Working Paper 10655",
-      "description": "We exploit Italian tax decentralization to study local redistribution. Progressive schedules induce some mobility at the top, but still increase municipal revenue and spending.",
+      "description": "We exploit Italian tax decentralization to study local redistribution. Progressive local tax schedules induce some mobility at the top, but still increase municipal revenue and spending.",
       "paper": "https://drive.google.com/file/d/1vCb8dzkh0qx2-GscqFoLjnnqDjUeNBdz/view?usp=drive_link",
       "links": [
         [
