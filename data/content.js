@@ -23,11 +23,11 @@ window.SITE_CONTENT = {
   },
   {
     "title": "Labor economics",
-    "description": "Labor supply, gender inequality, occupational regulation, marriage market."
+    "description": "Labor supply, gender inequality, occupational regulation, economics of education."
   },
   {
     "title": "Social economics",
-    "description": "Social norms, civic capital, institutional trust, civic education."
+    "description": "Social norms, civic capital, civic education, institutional trust."
   }
 ],
   "workingPapers": [
@@ -184,6 +184,10 @@ window.SITE_CONTENT = {
     {
       "title": "Tax-Induced Downsizing",
       "coauthors": "Enrico Miglino, Sauro Mocetti, Bernardo Mottironi & Enrico Rubolino"
+    },
+    {
+      "title": "Selection and Quality in Medical Education",
+      "coauthors": "Caterina Pavese, Enrico Rubolino & Sara Tozzi"
     },
     {
       "title": "The Gender Wage Gap and Labor Market Tightness",
