@@ -19,7 +19,7 @@ window.SITE_CONTENT = {
 "researchAreas": [
   {
     "title": "Public economics",
-    "description": "Taxation, inequality, redistribution, intergenerational mobility."
+    "description": "Taxation, inequality, public policy, intergenerational mobility."
   },
   {
     "title": "Labor economics",
