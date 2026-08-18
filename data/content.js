@@ -154,7 +154,7 @@ window.SITE_CONTENT = {
       "title": "The Impact of Socioeconomic Factors on the Incidence and Characteristics of First-Episode Psychosis",
       "byline": "M. Belvederi Murri, A. Onofrio, C. Punzi, Enrico Rubolino et al.",
       "status": "Epidemiology and Psychiatric Sciences 34, e45, 1–14, 2025",
-      "description": "This study examines how area-level socioeconomic conditions shape the incidence and characteristics of first-episode psychosis in Emilia-Romagna.",
+      "description": "Socioeconomic conditions shape the incidence and characteristics of first-episode psychosis.",
       "paper": "https://drive.google.com/file/d/1EnLpT1Sf1SuyeyDJarnDce6DBvSIL2O7/view?usp=sharing",
     },
     {
