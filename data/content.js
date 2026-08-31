@@ -39,7 +39,7 @@ window.SITE_CONTENT = {
       "paper": "https://drive.google.com/file/d/1R1IRuFMtrsFP06rrTyK_b2uq583Glbs1/view?usp=drive_link",
     },
     {
-      "title": "The Output Cost of Inheritance",
+      "title": "Inheritance and Labor Supply",
       "byline": "Marius Brülhart, Aurélien Eyquem, Isabel Z. Martínez & Enrico Rubolino",
       "status": "CESifo Working Paper 12255 · CEPR Discussion Paper 20837",
       "description": "Using Swiss tax records, we compare earnings responses to inheritances and lottery wins over the life cycle. Anticipation attenuates inheritance responses; effects peak near retirement.",
