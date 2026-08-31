@@ -207,7 +207,7 @@ window.SITE_CONTENT = {
     {
       "title": "Ambizione research grant (Swiss National Science Foundation)",
       "year": "2025-2029",
-      "description": "Gender inequality and public policy - Sole contractor; CHF 685,690 (USD 808,917)."
+      "description": "Gender inequality and public policy (sole contractor); CHF 685,690 (USD 808,917)."
     },
     {
       "title": "J-PAL European Social Inclusion Initiative",
