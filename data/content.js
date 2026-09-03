@@ -172,6 +172,15 @@ window.SITE_CONTENT = {
       "paper": "https://drive.google.com/file/d/1m_V1vlneoBj7TDciwnuAVUDforp9dX6u/view?usp=drive_open",
     }
   ],
+  "bookChapters": [
+    {
+      "title": "Wage Inequality",
+      "byline": "Enrico Rubolino",
+      "status": "Forthcoming · Chapter 15, Oxford University Press (2027, in press)",
+      "description": "In Grote, G., Guzzo, R. A., Lalive, R., and Nalbantian, H. R. (Eds.), Interdisciplinary Foundations for Organizational Science and Application: A Dialogue between Psychology and Economics.",
+      "paper": "https://drive.google.com/file/d/1wX4mCY7zDteifVxKSkMpFvgVt4cqAp1v/view?usp=drive_link"
+    }
+  ],
   "researchInProgress": [
     {
       "title": "Intergenerational Transmission of Institutional Trust",
