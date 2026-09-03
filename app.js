@@ -86,6 +86,7 @@ const nav = el("nav");
     "#published",
     "published_articles"
   ],
+  ["Book chapters", "#books", "book_chapters"],
   ["Research in progress", "#wip", "research_in_progress"],
   ["Research funding", "#funding", "research_funding"],
   ["Awards", "#awards", "awards"],
@@ -418,13 +419,19 @@ function papers(id, title, items, note) {
 papers(
   "working",
   "Working papers",
-  d.workingPapers,
+  d.workingPapers
 );
 
 papers(
   "published",
   "Published and forthcoming articles",
   d.publishedPapers
+);
+
+papers(
+  "books",
+  "Book chapters",
+  d.bookChapters || []
 );
 
 /* Research in progress */
