@@ -93,6 +93,13 @@ window.SITE_CONTENT = {
       "description": "Italy’s fascist-era bachelor tax shifted bargaining power and domestic work within marriage. The effects persisted across generations.",
       "paper": "https://drive.google.com/file/d/12gFI3ATuayrtxSI2Xvk37iNmIp1D97QG/view?usp=drive_link",
     },
+      {
+      "title": "Family Gender Cultures: Intergenerational Transmission and Malleability of Domestic Roles",
+      "byline": "Enrico Rubolino & Gabriela Terra",
+      "status": "",
+      "description": "This paper shows that gender inequality starts at home: daughters take on disproportionate housework from adolescence, but these family gender roles weaken when mothers’ labor-market opportunities improve.",
+      "paper": "https://drive.google.com/drive/folders/1MENe5rKhSSI_iu0BARh4DRG4b4BkLSvx",
+    },
     {
       "title": "What Determines the Capital Share over the Long Run of History?",
       "byline": "Erik Bengtsson, Enrico Rubolino & Daniel Waldenström",
