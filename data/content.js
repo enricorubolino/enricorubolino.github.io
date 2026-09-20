@@ -97,7 +97,7 @@ window.SITE_CONTENT = {
       "title": "Family Gender Cultures: Intergenerational Transmission and Malleability of Domestic Roles",
       "byline": "Enrico Rubolino & Gabriela Terra",
       "status": "",
-      "description": "This paper shows that gender inequality starts at home: daughters take on disproportionate housework from adolescence, but these family gender roles weaken when mothers’ labor-market opportunities improve.",
+      "description": "This paper shows that gender inequality starts at home: daughters take on disproportionate housework from adolescence, but these family gender roles weaken when mothers’ labor market opportunities improve.",
       "paper": "https://drive.google.com/drive/folders/1MENe5rKhSSI_iu0BARh4DRG4b4BkLSvx",
     },
     {
