@@ -98,7 +98,7 @@ window.SITE_CONTENT = {
       "byline": "Enrico Rubolino & Gabriela Terra",
       "status": "",
       "description": "This paper shows that gender inequality starts at home: daughters take on disproportionate housework from adolescence, but these family gender roles weaken when mothers’ labor market opportunities improve.",
-      "paper": "https://drive.google.com/drive/folders/1MENe5rKhSSI_iu0BARh4DRG4b4BkLSvx",
+      "paper": "https://drive.google.com/file/d/1mIuOWy3--jNutjJvESWKmAxTM5auuBwT/view?usp=sharing",
     },
     {
       "title": "What Determines the Capital Share over the Long Run of History?",
