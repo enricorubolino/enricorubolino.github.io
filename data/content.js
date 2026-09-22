@@ -59,10 +59,10 @@ window.SITE_CONTENT = {
       ]
     },
     {
-      "title": "Tax Notches and Household Labor Supply: Evidence from the Italian Spouse Tax Credit",
+      "title": "Tax Incentives and Gender Norms: Evidence from the Italian Spouse Tax Credit",
       "byline": "Tommaso Giommoni & Enrico Rubolino",
       "status": "CESifo Working Paper 11311",
-      "description": "A spouse tax credit generates sharp income bunching among women, but not men. The asymmetry is consistent with gender identity costs tied to the dependent-spouse label.",
+      "description": "Women, but not men, limit their income to qualify as dependent spouses under Italy’s tax system, consistent with traditional gender roles.",
       "paper": "https://drive.google.com/file/d/1aPOLcABy1650li6TbtmRWzIOYRpPNU7p/view?usp=sharing",
     },
     {
