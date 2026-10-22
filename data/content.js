@@ -112,7 +112,7 @@ window.SITE_CONTENT = {
     {
       "title": "Market Externalities of Tax Evasion",
       "byline": "Irene Di Marzio, Sauro Mocetti & Enrico Rubolino",
-      "status": "Forthcoming, American Economic Journal: Economic Policy",
+      "status": "American Economic Journal: Economic Policy, forthcoming",
       "description": "Firms' tax non-compliance harms competitors’ revenue, employment, and productivity, worsening allocative efficiency.",
       "paper": "https://drive.google.com/file/d/1aEj2xoNwGQd4MeZi3l3wXKZGavKUQ2hD/view?usp=drive_link",
     },
