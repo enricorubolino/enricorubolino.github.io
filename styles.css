@@ -425,3 +425,9 @@ a:hover {
     scroll-behavior: auto;
   }
 }
+
+.paper-revision {
+  color: #2457A7;
+  font-size: 0.80em;
+  font-weight: normal;
+}
