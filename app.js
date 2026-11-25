@@ -4,7 +4,7 @@ const d = window.SITE_CONTENT;
 
 const el = (tag, cls, text) => {
   const node = document.createElement(tag);
-
+ 
   if (cls) {
     node.className = cls;
   }
@@ -319,11 +319,19 @@ function paperItem(paper, sectionName) {
   const summary = el("summary");
   const head = el("div");
 
-  head.append(
-    el("h3", null, paper.title),
-    el("p", null, paper.byline),
-    el("p", "status", paper.status)
+const title = el("h3", null, paper.title);
+
+if (paper.revision) {
+  title.append(
+    el("span", "paper-revision", ` (${paper.revision})`)
   );
+}
+
+head.append(
+  title,
+  el("p", null, paper.byline),
+  el("p", "status", paper.status)
+);
 
   const toggle = el("span");
 
