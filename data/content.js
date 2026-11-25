@@ -31,6 +31,13 @@ window.SITE_CONTENT = {
   }
 ],
   "workingPapers": [
+        {
+      "title": "Tax Incentives and Gender Norms: Evidence from the Italian Spouse Tax Credit (R&R at Journal of Labor Economics)",
+      "byline": "Tommaso Giommoni & Enrico Rubolino",
+      "status": "CESifo Working Paper 11311",
+      "description": "Women, but not men, limit their income to qualify as dependent spouses under Italy’s tax system, consistent with traditional gender roles.",
+      "paper": "https://drive.google.com/file/d/1aPOLcABy1650li6TbtmRWzIOYRpPNU7p/view?usp=sharing",
+    },
     {
       "title": "Growing the Civic Mind: Civic Education, Civic Behavior, and Political Institutions",
       "byline": "Enrico Rubolino",
@@ -57,13 +64,6 @@ window.SITE_CONTENT = {
           "https://www.siepweb.it/siep/wp/en/en/premio-siep/"
         ]
       ]
-    },
-    {
-      "title": "Tax Incentives and Gender Norms: Evidence from the Italian Spouse Tax Credit",
-      "byline": "Tommaso Giommoni & Enrico Rubolino",
-      "status": "CESifo Working Paper 11311",
-      "description": "Women, but not men, limit their income to qualify as dependent spouses under Italy’s tax system, consistent with traditional gender roles.",
-      "paper": "https://drive.google.com/file/d/1aPOLcABy1650li6TbtmRWzIOYRpPNU7p/view?usp=sharing",
     },
     {
       "title": "Taxing or Subsidizing the Gender Gap? Labor Market Responses to a Female Hiring Subsidy",
