@@ -31,8 +31,9 @@ window.SITE_CONTENT = {
   }
 ],
   "workingPapers": [
- {
-  "title": "Tax Incentives and Gender Norms: Evidence from the Italian Spouse Tax Credit <span style='color:#2457A7; font-size:0.80em; font-weight:normal;'>(R&R at Journal of Labor Economics)</span>",
+{
+  "title": "Tax Incentives and Gender Norms: Evidence from the Italian Spouse Tax Credit",
+  "revision": "R&R at Journal of Labor Economics",
   "byline": "Tommaso Giommoni & Enrico Rubolino",
   "status": "CESifo Working Paper 11311",
   "description": "Women, but not men, limit their income to qualify as dependent spouses under Italy’s tax system, consistent with traditional gender roles.",
